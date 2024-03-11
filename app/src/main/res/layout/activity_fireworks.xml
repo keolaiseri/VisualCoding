@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fireworks.FireworksActivity">
+
+    <com.keola.visualcoding.fireworks.FireworksView
+        android:id="@+id/fireworksSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/particle_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="186dp"
+        android:fontFamily="@font/sfpronormal"
+        android:layout_centerVertical="true"
+        android:gravity="top"
+        android:text="particles.color = "
+        android:textAppearance="@style/ready_to_st" />
+
+
+    <TextView
+        android:id="@+id/pick_a_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/particle_color"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/sfpronormal"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:text="Pick a color and tap the screen!"
+        android:textFontWeight="500"
+        android:textAppearance="@style/ready_to_st" />
+
+
+    <Button
+        android:id="@+id/continue_fireworks_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pick_a_color"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/forwardarrow"
+        android:fontFamily="@font/sfpronormal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="@string/continue_label"
+        android:textAppearance="@style/label" />
+
+    <Spinner
+        android:id="@+id/colorSpinner"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>

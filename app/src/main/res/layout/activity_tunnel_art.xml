@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.keola.visualcoding.tunnel.TunnelView
+        android:id="@+id/tunnelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:id="@+id/drawText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="330dp"
+        android:text="#tunnel. stars \n{"
+        android:textAppearance="@style/ready_to_st" />
+
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/fullscreenButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="42dp"
+        android:background="@color/white"
+        android:onClick="toggleFullscreen"
+        android:src="@drawable/fullscreen" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drawText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="-320dp">
+
+        <TextView
+            android:id="@+id/shapeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shape:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <Spinner
+            android:id="@+id/shapeSpinner"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/shapes_array" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="6dp">
+
+
+        <TextView
+            android:id="@+id/colorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="color:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <EditText
+            android:id="@+id/colorInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfpronormal"
+            android:hint="Enter color hex code" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="6dp">
+
+
+        <TextView
+            android:id="@+id/sizeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="size:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <EditText
+            android:id="@+id/sizeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfpronormal"
+            android:hint="Enter value (1-10)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="6dp">
+
+
+        <TextView
+            android:id="@+id/speedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="speed:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <EditText
+            android:id="@+id/speedInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfpronormal"
+            android:hint="Enter value (1-10)" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/complete_tunnel_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/checkmark"
+        android:fontFamily="@font/sfpronormal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="Complete"
+        android:textAppearance="@style/label"
+        />
+
+
+
+
+</RelativeLayout>

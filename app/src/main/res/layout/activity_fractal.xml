@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".fractal.FractalActivity">
+
+
+    <com.keola.visualcoding.fractal.FractalView
+        android:id="@+id/fractalView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/drawText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="330dp"
+        android:text="#fractal. atrributes \n{"
+        android:textAppearance="@style/ready_to_st" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drawText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="-320dp">
+
+        <TextView
+            android:id="@+id/fractalShapeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shape:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <Spinner
+            android:id="@+id/fractalShapeSpinner"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/shapes_array" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="6dp">
+
+
+        <TextView
+            android:id="@+id/colorFractalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="color:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <Spinner
+            android:id="@+id/colorSchemeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfpronormal"
+            android:hint="Enter color hex code" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="6dp">
+
+
+        <TextView
+            android:id="@+id/sizeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="size:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <EditText
+            android:id="@+id/branchWidthInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:inputType="number"
+            android:fontFamily="@font/sfpronormal"
+            android:hint="Enter value (1-10)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="6dp">
+
+
+        <TextView
+            android:id="@+id/speedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="speed:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <EditText
+            android:id="@+id/fractalSpeedInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfpronormal"
+            android:hint="Enter value (1-10)" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/complete_fractal_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/checkmark"
+        android:fontFamily="@font/sfpronormal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="Complete"
+        android:textAppearance="@style/label"
+        />
+
+</RelativeLayout>

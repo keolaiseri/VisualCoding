@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">VisualCoding</string>
+
+
+    <!-- strings.xml -->
+    <string name="ready_to_st">
+Ready To Start Coding?
+</string>
+
+    <string name="continue_label">
+Continue
+</string>
+    <string name="choose_color">Choose Color</string>
+
+    <string-array name="fill_array">
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+
+    <string-array name="true_false_array">
+        <item>True</item>
+        <item>False</item>
+    </string-array>
+
+
+
+
+</resources>

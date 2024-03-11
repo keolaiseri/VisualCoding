@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.keola.visualcoding.fireworks.FireworksView
+        android:id="@+id/fireworksSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/finished_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/sfpronormal"
+        android:text="Congratulations! You've just created your first code generated art piece.  🖍"
+        android:textFontWeight="500"
+        android:textAlignment="center"
+        android:layout_marginStart="72dp"
+        android:textAppearance="@style/ready_to_st" />
+
+    <Button
+        android:id="@+id/continue_fireworks_finished_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/finished_text"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/check"
+        android:fontFamily="@font/sfpronormal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="Finish"
+        android:textAppearance="@style/label" />
+
+</RelativeLayout>

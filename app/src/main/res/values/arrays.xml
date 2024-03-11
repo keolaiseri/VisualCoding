@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string-array name="shapes_array">
+            <item>star;</item>
+            <item>circle;</item>
+            <item>hexagon;</item>
+            <item>diamond;</item>
+            <item>orb;</item>
+            <!-- Add more shapes here -->
+        </string-array>
+
+    <string-array name="brush_shapes">
+        <item>ROUND</item>
+        <item>SQUARE</item>
+        <item>DASH</item>
+        <item>DISCRETE</item>
+        <item>PATH_DASH</item>
+        <item>COMPOSE</item>
+        <item>SUM</item>
+    </string-array>
+    </resources>

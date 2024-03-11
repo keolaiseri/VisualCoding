@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".rain.RainActivity">
+
+    <com.keola.visualcoding.rain.RainView
+        android:id="@+id/rainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/rainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="330dp"
+        android:text="#weather. rain \n{"
+        android:textAppearance="@style/ready_to_st" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rainText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="-320dp">
+
+        <TextView
+            android:id="@+id/thunderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thunder:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <Spinner
+            android:id="@+id/thunderSpinner"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/shapes_array" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="6dp">
+
+
+        <TextView
+            android:id="@+id/windLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wind:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <EditText
+            android:id="@+id/windSpeedInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfpronormal"
+            android:hint="Enter value (1-10)" />
+
+        <ImageButton
+            android:id="@+id/colorPickerButton"
+            android:background="@color/white"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_eyedropper" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="6dp">
+
+
+        <TextView
+            android:id="@+id/speedRainLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="speed:"
+            android:textAppearance="@style/ready_to_st" />
+
+        <EditText
+            android:id="@+id/speedRainInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/sfpronormal"
+            android:hint="Enter value (1-10)" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/complete_rain_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/checkmark"
+        android:fontFamily="@font/sfpronormal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="Complete"
+        android:textAppearance="@style/label"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.keola.visualcoding.fireworks.FireworksView
+        android:id="@+id/fireworksSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/particle_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginEnd="195dp"
+        android:fontFamily="@font/sfpronormal"
+        android:layout_centerVertical="true"
+        android:gravity="top"
+        android:text="particles.size = "
+        android:textAppearance="@style/ready_to_st" />
+
+
+    <TextView
+        android:id="@+id/pick_a_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/particle_size"
+        android:fontFamily="@font/sfpronormal"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:textSize="14sp"
+        android:text="Pick a value between 1 and 10 and tap the screen!"
+        android:textFontWeight="500"
+        android:textAppearance="@style/ready_to_st" />
+<!--
+    <Button
+        android:id="@+id/run_fireworks_size_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/particle_size"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/run"
+        android:fontFamily="@font/sfpronormal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="Run Code"
+        android:textAppearance="@style/label" />-->
+
+    <Button
+        android:id="@+id/continue_fireworks_size_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pick_a_size"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button"
+        android:drawableStart="@drawable/forwardarrow"
+        android:fontFamily="@font/sfpronormal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:text="@string/continue_label"
+        android:textAppearance="@style/label" />
+
+    <EditText
+        android:id="@+id/particleSizeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="52dp"
+        android:hint="Enter Nnumber"
+        android:inputType="number" />
+
+
+
+</RelativeLayout>
